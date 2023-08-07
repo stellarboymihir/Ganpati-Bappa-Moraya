@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganpati Bappa Moraya | Animated Website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="ganpati.jpg" class="ganpati">
+        <header>
+            <a href="#" class="logo"> Ganpati </a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1;" class="active">Home</a></li>
+                <li><a href="#" style="--i:2;">About</a></li>
+                <li><a href="#" style="--i:3;">Calendar</a></li>
+                <li><a href="#" style="--i:4;">Blog</a></li>
+                <li><a href="#" style="--i:5;">Contact</a></li>
+                </ul>
+        </header>
+
+        <div class="content">
+           <div class="textBox">
+                <h2>Happy Ganesh Chaturthi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ullam, voluptatum quos qui pariatur <br>
+            libero ducimus beatae fugit delectus ipsum nam repudiandae tempore doloremque modi itaque ab <br>exercitationem. Nobis, hic!</p>
+              <a href="#">Read More</a>
+           </div>
+        </div>
+
+        <ul class="sci">
+            <li><a href="sci" style="--i:12;"><img src="facebook.png"></a></li>
+            <li><a href="sci" style="--i:13;"><img src="twitter.png"></a></li>
+            <li><a href="sci" style="--i:14;"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onClick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
